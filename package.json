@@ -10,6 +10,14 @@
     "postinstall": "nuxt prepare",
     "start": "node .output/server/index.mjs"
   },
+  {
+  "scripts": {
+    "dev": "nuxt",
+    "build": "prisma generate && nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "postinstall": "prisma generate" // 确保安装依赖后生成 Prisma Client
+  }，
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.9",
     "@nuxt/config": "^2.17.1",
